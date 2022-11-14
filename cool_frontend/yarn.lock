@@ -1594,6 +1594,11 @@
     schema-utils "^3.0.0"
     source-map "^0.7.3"
 
+"@react-oauth/google@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@react-oauth/google/-/google-0.4.0.tgz#ae4fe2724040bd11facdc53aad43a21e9f34b2c9"
+  integrity sha512-2QxxrKbXXH8bwHSefB56sBgsKs7Bq3Pvv8tVmGJuINGefECsssIUKidTDm5P55T4CV99sCX/GUfxs3l2Ntxo8Q==
+
 "@remix-run/router@1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.0.3.tgz#953b88c20ea00d0eddaffdc1b115c08474aa295d"
@@ -6113,6 +6118,11 @@ jsonpointer@^5.0.0:
   dependencies:
     array-includes "^3.1.5"
     object.assign "^4.1.3"
+
+jwt-decode@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/jwt-decode/-/jwt-decode-3.1.2.tgz#3fb319f3675a2df0c2895c8f5e9fa4b67b04ed59"
+  integrity sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==
 
 kind-of@^6.0.2:
   version "6.0.3"
