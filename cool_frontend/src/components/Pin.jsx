@@ -18,7 +18,7 @@ const Pin = ({pin: {postedBy, image, _id, destination, save}}) => {
 
   // user1, [2, 3, 1] => [1].length => 1 => !1 => false => !false => true
   // user6, [2, 3, 1] => [].length => 0 => !0 => true => !true => false
-  const alreadySaved = /*!*/!(save?.filter((item) => item.postedBy?._id === User?.sub))?.length;  //question mark important
+  const alreadySaved = /*!*/!(save?.filter((item) => item?.postedBy?._id === User?.sub))?.length;  //question mark important
 
 
 
