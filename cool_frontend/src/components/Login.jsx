@@ -12,15 +12,15 @@ const Login = () => {
   const navigate = useNavigate();
 
   const responseGoogle = (response) => {
-    localStorage.setItem( "user", JSON.stringify(response.credential))
-
+    console.log(response);
+    localStorage.setItem( "User", JSON.stringify(response.credential))
 
     const { name, sub, picture } = jwt_decode(response.credential);
       console.log({ name, sub, picture})
 
     const doc = {
       _id: sub,
-      _type: "user",
+      _type: "User",
       userName: name,
       image: picture
     };
@@ -49,7 +49,7 @@ const Login = () => {
           </div>
           <div className="shadow-2xl">
           <GoogleLogin
-
+              clientId={process.env.REACT_APP_GOOGLE_API_TOKEN}
               render={ (renderProps) => (
                 <button
                   type="button"
