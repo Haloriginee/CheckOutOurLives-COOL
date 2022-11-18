@@ -30,10 +30,10 @@ const Pin = ({pin: {postedBy, image, _id, destination, save}}) => {
         .setIfMissing({save: [] })
         .insert("after", "save[-1]", [{
           _key: uuidv4,
-          userId: User.sub,
+          userId: User?.sub,
           postedBy: {
             _type: "postedBy",
-            _ref: User.sub,
+            _ref: User?.sub,
           }
         }])
         .commit()
